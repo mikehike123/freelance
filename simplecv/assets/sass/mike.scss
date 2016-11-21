@@ -1,0 +1,59 @@
+
+.experiences {
+    >ul {
+        padding: 0px;
+        margin: 0 20px;
+        li {
+            padding: 0px;
+            margin: 0px;
+        }
+        li:before {
+            content: "\f101";
+            /* FontAwesome Unicode */
+            font-family: FontAwesome;
+            display: inline-block;
+            margin-left: -1.3em;
+            /* same as padding-left set on li */
+            width: 1.3em;
+            /* same as padding-left set on li */
+        }
+    }
+}
+ul.job {
+    padding: 0px;
+    margin: 0px;
+    >li {
+        padding: 0px;
+        margin: 15px 0px;
+        >h4 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    ul li {
+        padding: 0px;
+        margin: 5px 5px;
+    }
+    ul li:before {
+        content: "\f00c";
+        /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.3em;
+        /* same as padding-left set on li */
+        width: 1.3em;
+        /* same as padding-left set on li */
+    }
+    ul {
+        padding: 0px;
+        margin: 0px;
+        padding-left: 1.5em;
+    }
+}
+.techEnviro h4 {
+    margin-right: .5em;
+    display: inline;
+}
+.techEnviro span {
+    font-size: .8em;
+}

@@ -1,0 +1,50 @@
+.experiences > ul {
+  padding: 0px;
+  margin: 0 20px; }
+  .experiences > ul li {
+    padding: 0px;
+    margin: 0px; }
+  .experiences > ul li:before {
+    content: "\f101";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */ }
+
+ul.job {
+  padding: 0px;
+  margin: 0px; }
+  ul.job > li {
+    padding: 0px;
+    margin: 15px 0px; }
+    ul.job > li > h4 {
+      margin: 0;
+      padding: 0; }
+  ul.job ul li {
+    padding: 0px;
+    margin: 5px 5px; }
+  ul.job ul li:before {
+    content: "\f00c";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */ }
+  ul.job ul {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 1.5em; }
+
+.techEnviro h4 {
+  margin-right: .5em;
+  display: inline; }
+
+.techEnviro span {
+  font-size: .8em; }
+
+/*# sourceMappingURL=mike.css.map */

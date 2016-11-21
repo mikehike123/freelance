@@ -1,0 +1,555 @@
+/*!
+ * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+hr {
+  border-color: #0f434c;
+  border-width: 3px;
+  max-width: 500px;
+}
+hr.light {
+  border-color: white;
+}
+
+
+.intro-quote{
+    color: white;
+    font-size: 26px;
+}
+
+.intro-pic{
+    max-width: 
+}
+
+
+/* ---------------- */
+
+a:hover,
+a:focus {
+  color: #eb3812;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.bg-primary {
+  background-color: #F05F40;
+}
+.bg-dark {
+  background-color: #0f434c;
+  color: white;
+}
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+section {
+  padding: 50px 0;
+}
+aside {
+  padding: 50px 0;
+}
+.no-padding {
+  padding: 0;
+}
+
+
+@media (min-width: 768px) {
+ 
+    
+    .quote-pic{
+        max-width: 250px;
+        margin: auto;
+    }
+}
+.section-heading {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.service-box {
+  max-width: 400px;
+  margin: 50px auto 0;
+}
+@media (min-width: 992px) {
+  .service-box {
+    margin: 20px auto 0;
+  }
+}
+
+.mountain-quote, .intro-quote{
+        font-size:19px !important;
+} 
+section#kellyquote
+{
+    padding-top: 80px;
+}
+section#contact
+{
+    padding-top:0px;
+}
+@media (min-width: 768px){
+    section#contact
+    {
+        padding-top:50px;
+    }
+    section#kellyquote
+    {
+        padding-top: 50px;
+    }
+    .mountain-quote, .intro-quote{
+        font-size:26px !important;
+    } 
+}
+
+
+body {
+  webkit-tap-highlight-color: #222222;
+}
+.employee p
+{
+	font-size: 16px;
+    line-height: 1.5;
+	margin:0px;
+	padding:0px;
+    
+}
+.employee  .name {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+@media (min-width: 750px) {
+  .employee  .name {
+   text-transform: uppercase;
+   font-size: 2vw;
+  }
+}
+.employee .position {
+	
+}
+.employee .company {
+	
+}
+
+.soc-profiles {
+	border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 0;
+    padding: 8px 0;
+}
+.soc-profiles a {
+    display: inline-block;
+    line-height: 0;
+	color: #1da1db;
+    cursor: pointer;
+    text-decoration: none;
+	overflow-wrap: break-word;
+}
+.soc-profiles li {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    height: 24px;
+    margin-left: 40px;
+    text-align: center;
+    width: 24px;
+	font-size: 1em;
+    line-height: 1.6em;
+    margin-top: 15px;
+}
+.soc-profiles ul
+{
+    list-style:none;
+    padding-left:0;
+}
+
+.soc-profiles li.linkedin {
+    background-image: url("../img/kelly/In-2C-34px-R.png");
+    background-position: center;
+    margin-left:0px;
+}
+
+.soc-profiles li.website {
+    border-left: 1px solid #e8e8e8;
+    padding-left: 16px;
+    vertical-align: top;
+    width: auto;
+}
+
+/* added by Mike Clark and Andrew BirnBrich */
+div.copyrights p
+    {
+        width:300px;float:right;z-index:1000;font-size:10px;
+    }
+
+	section#about, section#about p
+    {
+        font-size:18px;
+    }
+    ul.commitment li 
+    {
+        
+        /*list-style-type:none; */
+        margin-top: 15px;
+    }
+
+	.testimonial.testimonial--with-img {
+    padding: 30px 0;
+	}
+	Section.quote, aside.quote
+	{
+		background: #0f434c;
+	}
+	.testimonial.testimonial--dark {
+		background: #0f434c;
+		-webkit-transition: background 0.3s;
+		-moz-transition: background 0.3s;
+		-o-transition: background 0.3s;
+		transition: background 0.3s;
+	}
+
+	.testimonial--with-img {
+		display: table;
+	}
+	.testimonial {
+		width: 100%;
+	}
+
+
+.testimonial--with-img .testimonial__img-cell {
+    display: table-cell;
+    width: 20%;
+    min-width: 208px;
+    text-align: center;
+    padding: 0 10px 0 30px;
+    position: relative;
+    vertical-align: top;
+}
+.testimonial--with-img .testimonial__text-wrapper {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 60px;
+}
+
+@media (max-width: 767px) and (min-width: 0)
+{
+	.testimonial--with-img .testimonial__img-cell {
+		display: block;
+		width: 100%;
+		padding: 10px 20px 25px 20px;
+	}
+	.testimonial--with-img .testimonial__text-wrapper {
+		display: block;
+		padding: 0 15px 0 40px;
+	}
+}
+* {
+    box-sizing: border-box;
+}
+
+.testimonial--with-img .testimonial__img-wrapper {
+    position: relative;
+    width: 135px;
+    margin: 0 auto;
+    height: 135px;
+}
+
+.testimonial--with-img .testimonial__headshot {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(0,0,0,0.1);
+}
+img {
+    max-width: 100%;
+}
+
+
+
+.testimonial.testimonial--dark .testimonial__attribution *, .testimonial.testimonial--dark .testimonial__quote, .testimonial.testimonial--dark .testimonial__attribution:before {
+    color: #fff;
+}
+@media (max-width: 767px) and (min-width: 0)
+.testimonial--with-img .testimonial__quote {
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+.testimonial--with-img .testimonial__quote {
+    position: relative;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "KlinicSlabLight",serif;
+    letter-spacing: 0.9px;
+    margin: 0 0;
+    padding-bottom: 35px;
+}
+@media (max-width: 767px) and (min-width: 0)
+.testimonial--with-img .testimonial__attribution {
+    text-align: center;
+}
+
+.testimonial--with-img .testimonial__attribution {
+    padding: 12px 37px 0 0;
+    line-height: 1.6em;
+    position: relative;
+}
+
+
+.testimonial--with-img .testimonial__quote:before, .testimonial--with-img .testimonial__quote:after {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 48px;
+    position: absolute;
+}
+.testimonial--with-img .testimonial__quote::before {
+    content: "“";
+    left: -29px;
+    top: 6px;
+}
+.testimonial--with-img .testimonial__quote::after {
+    bottom: 30px;
+    content: "”";
+    padding-left: 6px;
+}
+
+.testimonial--with-img .testimonial__attribution::before {
+    content: "";
+    font-size: 60px;
+    left: -1px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -38px;
+}
+.testimonial--with-img .testimonial__attribution {
+    line-height: 1.6em;
+    padding: 12px 37px 0 0;
+    position: relative;
+}
+.testimonial--no-img .testimonial__name, .testimonial--with-img .testimonial__name {
+    text-transform: uppercase;
+}
+.testimonial--with-img .testimonial__attribution * {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.testimonial--no-img .testimonial__company, .testimonial--no-img .testimonial__company-link, .testimonial--with-img .testimonial__company, .testimonial--with-img .testimonial__company-link {
+    font-family: "KlinicSlabBook",serif;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 1.6em;
+}
+
+.copyrights a
+{
+    color:white;
+    text-decoration:underline;
+}
+
+.copyrights a:hover { 
+    color:orange;
+}
+
+.bullet {font-size: 3em; line-height: 0.5em;}
+ul span {font-size: 18px; vertical-align: middle;}
+
+span.IN-none {
+    display: none;
+}
+
+body {  
+        min-width:300px; 
+        width: auto !important;  /* Firefox will set width as auto */
+        width:300px;   
+      }
+      
+      #kellyquote div
+      {
+         /* margin-top: 100px; */
+      }
+      
+      
+    
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    nav#kelly-menu .container-fluid
+    {
+        margin-top: 0px;
+    }
+     #kelly-menu
+    {
+        background-color: #ffffff;
+        z-index: 90;
+    }
+    
+    
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -40px;
+    visibility: hidden;
+}
+  li#inshare
+      {
+        padding: 30px 0 0 20px;
+      }
+
+  @media (min-width: 768px) {
+      
+      li#inshare
+      {
+        padding: 0 0 0 20px;
+      }
+      
+
+      nav#kelly-menu .container-fluid
+        {
+            margin-top: 15px;
+        }
+      
+      /*  This will grow the img on top if we need it on larger screen */
+      /*
+      div.affix-top nav#kelly-menu .container-fluid
+      {
+          margin-top: 40px;
+      }
+      
+       div.affix-top #navbar-brand img
+        {
+        margin-top:-40px; 
+        width:450px;
+        }
+      */
+      
+       #navbar-brand img
+      {
+          width:420px;
+          margin-top: -10px;
+      }
+      
+      nav#kelly-menu, nav#kelly-menu navbar-header, nav#kelly-menu navbar-header, nav#kelly-menu .navbar-brand
+      {
+          padding-left: 0px;
+      }
+      nav#kelly-menu .navbar-brand
+      {
+          padding-top:0px;
+          margin-left:0px;
+      }
+      #myNavbar a
+      {
+          height:50px; !important
+      }
+      
+      #myNavbar  ul
+      {
+          margin-top: 0px;
+          
+      }
+      
+      
+      
+      /*
+      #myNavbar  li
+      {
+          background-color: #ffffff;
+      } */
+      #myNavbar  li a
+      {
+          line-height: 1;
+      }
+      #inshare
+      {
+          display: block;
+      }
+      a.anchor {
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
+        }
+    }
+    /* image is too big for tablets */
+
+    @media (min-width:750px) and  (max-width: 900px) {
+      
+      #navbar-brand img
+      {
+          width:300px;
+          margin-top: -10px;
+      }
+    }
+
+    /* bug 3 fix - make menu tabs more visible */
+    #myNavbar .navbar-right li a
+    {
+        color:white;
+        font-weight: 600;
+    }
+    #myNavbar .navbar-right li.active a
+    {
+        color:#fff;
+        background-color: #0f434c;
+    }
+    .navbar-default {
+        background-color: #770e0b;
+        border: none;
+        /*border-color: #e7e7e7; */
+    }
+    #kelly-menu {
+        background-color: #770e0b; */
+    }
+    /* end bug fix 3 */
+
+    /*fix for bug 7 */
+    footer 
+    {
+        background-color: #0f434c;
+        color:#fff;
+        font-size: 14px;
+            
+    }
+    footer p.hook
+    {
+        font-size:18px;
+    }
+    footer hr.primary
+    {
+        border-color:#fff;
+    }
+    /* contact icons, phone and email links */
+    footer i.fa, footer div.contact-info p
+    {
+        color:#fff;
+    }
+    .navbar-toggle {
+        background-color: #ddd;
+    }
+    body
+    {
+         background-color: #dad6d6; 
+    }
+    /* end bug 7 fix */ 
+
