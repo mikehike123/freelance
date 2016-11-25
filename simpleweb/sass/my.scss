@@ -1,4 +1,5 @@
 @import "bootstrap/assets/stylesheets/bootstrap";
+@import "flex.scss";
 $color-rust: #770e0b;
 $color-lightBlue:#33a4c9;
 $color-blue: #0f434c;
@@ -11,6 +12,14 @@ $middle-screen:750px;
     #{$property}: -moz-calc(#{$expression});
     #{$property}: -webkit-calc(#{$expression});
     #{$property}: calc(#{$expression});
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
 }
 body {
     font-family: "Droid";
@@ -359,4 +368,224 @@ div#topHeader.affix {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/*  Portfolio Grid */
+
+.grid .grid__wrapper {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    
+}
+
+@media screen and (min-width: 600px)
+{
+.grid--square .grid__item .grid__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+}
+.grid--square .grid__item .grid__overlay {
+    //padding: 135px 40px;
+}
+
+@media screen and (min-width: 900px)
+{
+.grid--square {
+    height: 0;
+    padding-bottom: 300px;
+}
+}
+
+@media screen and (min-width: 600px)
+{
+.grid--square {
+    height: 0;
+    //padding-bottom: 200%;
+}
+}
+.grid {
+    overflow: hidden;
+}
+
+.grid--square .grid__item {
+    height: 0;
+}
+
+/*
+@media screen and (min-width: 900px)
+{
+.grid--square .grid__item {
+    padding-bottom: 18vw;
+}}
+@media screen and (min-width: 600px)
+{
+.grid--square .grid__item {
+    padding-bottom: 18vw;
+}}
+*/
+@media screen and (min-width: 900px)
+{
+.grid .grid__item {
+    width: 33.3333%;
+}}
+@media screen and (min-width: 600px)
+{
+.grid .grid__item {
+    width: 50%;
+}}
+.grid__wrapper>a {
+    
+    @include flex(1);
+    
+}
+@media screen and (max-width: 600px)
+{
+    
+    .grid .grid__wrapper {
+        display:block;
+    }
+    .grid .grid__overlay
+    {
+        display:none;
+    }
+}
+    
+.grid .grid__item {
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    @include transition(background-position 450ms ease);
+    width: 100%;
+    height:100%;
+    position: relative;
+    background-image: url(../img/kellywebbutton.png);
+    background-position: 50% 50%;
+}
+
+.grid__item--zoom .grid__overlay__content {
+    //-webkit-transform-origin: left;
+    //transform-origin: left;
+}
+.grid .grid__overlay .grid__overlay__content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height:100%;
+    vertical-align:middle;
+    
+}
+.grid .grid__overlay {
+    align-items: center;
+    background-color: rgba(255, 0, 168, 0.85);
+    color: white;
+    opacity: 0;
+    position: relative;
+    text-align: left;
+    @include transition(all 450ms ease);
+    padding:5%;
+}
+
+.grid__item:hover
+{
+    background-position: 30px 30px;
+}
+.grid .grid__overlay:hover
+{
+    opacity: .95;
+    width:100%;
+    height:100%;
+}
+.grid .grid__overlay .grid__overlay__content:hover
+{
+    opacity: 1;
+}
+///////////////////////////////////////////////////
+// Expand Div
+/////////////////////////////////////////////////
+.r { float: right; }
+
+/*PLAYER*/
+
+.grid__details_hide {
+  //display:none;
+  position: block;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 0px;
+  background: #444;
+  //-webkit-transition: all 0.3s ease;
+  //-moz-transition: all 0.3s ease;
+  //-o-transition: all 0.3s ease;
+  //-ms-transition: all 0.3s ease;
+  //transition: height 0.3s ease;
+  transition: all 1s ease-in;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 1000;
+  
+}
+.grid__details_show
+{
+    //display:block;
+    opacity: 1;
+    height: auto;
+    transition: all 1s ease-in;
+   
+    
+    
+}
+
+.grid__details.active {
+  margin-top: 0;
+  top: 0 !important;
+}
+
+.pl-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#pl-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: #333;
+  border-top: 1px solid #444;
+}
+
+#pl-bar i {
+  height: 100%;
+  width: 40px;
+  border-left: 1px solid #444;
+  line-height: 50px;
+  text-align: center;
+  color: #999;
+  cursor: pointer;
+}
+
+#pl-bar i:first-child {
+  border-left: none;
+  border-right: 1px solid #444;
+}
+
+#pl-bar i:hover {
+  color: #eaeaea;
+  background: #3b3b3b;
+}
+h2.banner
+{
+    font-size: 3.5em;
+}
+header li 
+{
+    font-size:1.2em;
 }
