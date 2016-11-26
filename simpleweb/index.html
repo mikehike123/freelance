@@ -37,7 +37,7 @@
 
 <body data-spy="scroll">
     <!-- Header -->
-    <header role="banner">
+    <header role="banner" class="topHeaderPic">
         <div class="container">
             <div class="row">
                 <hgroup class="col-sm-6">
@@ -51,9 +51,7 @@
                     </ul>
                 </hgroup>
 
-                <figure class="col-sm-6">
-                    <img src="assets/avatar.jpg" alt="Sheldon COOPER">
-                </figure>
+                
             </div>
         </div>
 
@@ -175,46 +173,53 @@
     <section class="portfolio">
         <div class="container">
             <div class="row">
+
                 <div class="sectionTitle">Portfolio</div>
                 <div class="grid section--media grid--square">
                     <div class="grid__wrapper">
-                        <a class='profileLink'>
-                            <div class="grid__item" style="background-image:url(../img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
-                                <div class="grid__overlay">
-                                    <div class="grid__overlay__content">
+                        <div class="col-md-4">
+                            <a class='profileLink'>
+                                <div class="grid__item" style="background-image:url(../img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
+                                    <div class="grid__overlay">
+                                        <div class="grid__overlay__content">
 
-                                        <h5 class="title">Relentless Recruiting</h5>
-                                        <p class="medium">One Page Web Site</p>
+                                            <h5 class="title">Relentless Recruiting</h5>
+                                            <p class="medium">One Page Web Site</p>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a target="_blank" href="http://r-recruitingusa.com/">
+                                <div class="grid__item" style="background-image:url(../img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
+                                    <div class="grid__overlay">
+                                        <div class="grid__overlay__content">
+
+                                            <h5 class="title">DENNY.</h5>
+                                            <p class="medium">Oregon Manifest</p>
+                                        </div>
 
                                     </div>
                                 </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a target="_blank" href="http://r-recruitingusa.com/">
+                                <div class="grid__item" style="background-image:url(../img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
+                                    <div class="grid__overlay">
+                                        <div class="grid__overlay__content">
 
-
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://r-recruitingusa.com/">
-                            <div class="grid__item" style="background-image:url(../img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
-                                <div class="grid__overlay">
-                                    <div class="grid__overlay__content">
-
-                                        <h5 class="title">DENNY.</h5>
-                                        <p class="medium">Oregon Manifest</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="http://r-recruitingusa.com/">
-                            <div class="grid__item" style="background-image:url(../img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
-                                <div class="grid__overlay">
-                                    <div class="grid__overlay__content">
-
-                                        <h5 class="title">DENNY.</h5>
-                                        <p class="medium">Oregon Manifest</p>
+                                            <h5 class="title">DENNY.</h5>
+                                            <p class="medium">Oregon Manifest</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,31 +228,35 @@
     <section id="profileDetails" style="margin:25px;">
         <div id="slide1" class="grid__details_hide">
             <div class="pl-wrap">
-                <div class="fluid-container" style="padding: 0px; margin:0px;">
+                <div class="fluid-container" style="padding: 0px; margin:0px">
                     <div class="row" style="margin:10px 0px 50px 0px;">
-                        <div class="col-md-4 text-center"  >
-                            <header><h2 style="color:white;">Mobile</h2></header>
+                        <div class="col-xl-4 col-lg-6 text-center">
+                            <header>
+                                <h2 style="color:white;">Mobile</h2></header>
                             <iframe src="http://r-recruitingusa.com/" style="width:375px;height:600px"></iframe>
                         </div>
-
-                        <div class="col-md-6 text-center">
-                            <header><h2 style="color:white;">Desktop</h2></header>
-                            <iframe src="http://r-recruitingusa.com/" style="width:780px;height:600px"></iframe>
-                        </div>
-                        <div class="col-md-2" style="color:white;">
-                            <header ><h2 style="text-decoration: underline;">Skills Used</h2></header>
-                            <ul>
+                        <div class="col-xl-2 col-lg-3">
+                            <header>
+                                <h2 style="text-decoration: underline;color:white;">Skills Used</h2></header>
+                            <ul style="color:black;background-color:white;">
                                 <li>html</li>
                                 <li>css</li>
                                 <li>bootstrap</li>
                             </ul>
                         </div>
+
+                        <div class="col-xl-6 col-lg-12 text-center">
+                            <header>
+                                <h2 style="color:white;">Desktop</h2></header>
+                            <iframe src="http://r-recruitingusa.com/" style="width:100%;height:600px"></iframe>
+                        </div>
+
                     </div>
                     <div id="pl-bar"> <i style="color:white;" class="fa fa-expand  fa-window-close-o r"></i> </div>
                 </div>
             </div>
         </div>
-        
+
 
     </section>
     <!-- Expériences -->

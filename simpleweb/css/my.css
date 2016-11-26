@@ -6016,19 +6016,17 @@ a.anchor {
   visibility: hidden; }
 
 .topHeaderPic {
-  background: url("../img/bikes-ver3.jpg") no-repeat top center fixed;
+  background: url("../img/worldweb.jpg") no-repeat top center fixed;
   background-size: cover;
-  height: 100%;
+  height: 300px;
   /*shows menu bar at bottom of screen for browsers that support calc */
-  height: -moz-calc(100% - 44px);
-  height: -webkit-calc(100% - 44px);
-  height: calc(100% - 44px);
-  width: 100%;
+  width: auto;
   margin: 0;
   padding: 0;
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 50px; }
+  background-size: 300px auto;
+  background-position-x: 80%; }
 
 #mePic {
   /* The background image */
@@ -6133,16 +6131,13 @@ div#topHeader.affix {
   transform: translateY(-50%); }
 
 /*  Portfolio Grid */
-.grid .grid__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+.bottomRightShadow, .grid .grid__item {
+  border: solid 1px #555;
+  background-color: #eed;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
 
 @media screen and (min-width: 600px) {
   .grid--square .grid__item .grid__overlay {
@@ -6182,14 +6177,6 @@ div#topHeader.affix {
 @media screen and (min-width: 600px) {
   .grid .grid__item {
     width: 50%; } }
-.grid__wrapper > a {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
-
 @media screen and (max-width: 600px) {
   .grid .grid__wrapper {
     display: block; }

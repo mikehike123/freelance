@@ -13,13 +13,12 @@ $middle-screen:750px;
     #{$property}: -webkit-calc(#{$expression});
     #{$property}: calc(#{$expression});
 }
-
 @mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
 }
 body {
     font-family: "Droid";
@@ -78,8 +77,9 @@ section {
 /////////////////////////////////////
 
 /* Experience section */
-.experience h4{
-    font-size:1em;
+
+.experience h4 {
+    font-size: 1em;
 }
 ul.jobSummary {
     padding: 0px;
@@ -108,7 +108,7 @@ ul.job {
         >h4 {
             margin: 0;
             padding: 0;
-            font-size:1em;
+            font-size: 1em;
         }
     }
     ul li {
@@ -134,7 +134,7 @@ ul.job {
 .techEnviro h4 {
     margin-right: .5em;
     display: inline;
-    font-size:1em;
+    font-size: 1em;
 }
 .techEnviro span {
     font-size: .8em;
@@ -247,18 +247,19 @@ a.anchor {
     visibility: hidden;
 }
 .topHeaderPic {
-    background: url("../img/bikes-ver3.jpg") no-repeat top center fixed;
+    background: url("../img/worldweb.jpg") no-repeat top center fixed;
     background-size: cover;
-    height: 100%;
+    height: 300px;
     /*shows menu bar at bottom of screen for browsers that support calc */
-    @include calc(height,
-    '100% - 44px');
-    width: 100%;
+    //@include calc(height,'100% - 44px');
+    width: auto;
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 50px;
+    background-size: 300px auto;
+    background-position-x: 80%; 
+    
 }
 #mePic {
     /* The background image */
@@ -372,45 +373,48 @@ div#topHeader.affix {
 
 /*  Portfolio Grid */
 
+.bottomRightShadow {
+    //width: 350px;
+    //height: 200px;
+    border: solid 1px #555;
+    background-color: #eed;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+}
+// See more at: http: //www.corelangs.com/css/box/shadow.html#sthash.z8lfgsW9.dpuf
 .grid .grid__wrapper {
-    @include flexbox();
-    @include flex-wrap(wrap);
-    
+    //@include flexbox();
+    //@include flex-wrap(wrap);
 }
-
-@media screen and (min-width: 600px)
-{
-.grid--square .grid__item .grid__overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+@media screen and (min-width: 600px) {
+    .grid--square .grid__item .grid__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
 }
 .grid--square .grid__item .grid__overlay {
     //padding: 135px 40px;
 }
-
-@media screen and (min-width: 900px)
-{
-.grid--square {
-    height: 0;
-    padding-bottom: 300px;
+@media screen and (min-width: 900px) {
+    .grid--square {
+        height: 0;
+        padding-bottom: 300px;
+    }
 }
-}
-
-@media screen and (min-width: 600px)
-{
-.grid--square {
-    height: 0;
-    //padding-bottom: 200%;
-}
+@media screen and (min-width: 600px) {
+    .grid--square {
+        height: 0;
+        //padding-bottom: 200%;
+    }
 }
 .grid {
     overflow: hidden;
 }
-
 .grid--square .grid__item {
     height: 0;
 }
@@ -427,44 +431,39 @@ div#topHeader.affix {
     padding-bottom: 18vw;
 }}
 */
-@media screen and (min-width: 900px)
-{
-.grid .grid__item {
-    width: 33.3333%;
-}}
-@media screen and (min-width: 600px)
-{
-.grid .grid__item {
-    width: 50%;
-}}
+
+@media screen and (min-width: 900px) {
+    .grid .grid__item {
+        width: 33.3333%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .grid .grid__item {
+        width: 50%;
+    }
+}
 .grid__wrapper>a {
-    
-    @include flex(1);
-    
+    //@include flex(1);
 }
-@media screen and (max-width: 600px)
-{
-    
+@media screen and (max-width: 600px) {
     .grid .grid__wrapper {
-        display:block;
+        display: block;
     }
-    .grid .grid__overlay
-    {
-        display:none;
+    .grid .grid__overlay {
+        display: none;
     }
 }
-    
 .grid .grid__item {
     background-repeat: no-repeat;
-    background-size: 100% ;
+    background-size: 100%;
     @include transition(background-position 450ms ease);
     width: 100%;
-    height:100%;
+    height: 100%;
     position: relative;
     background-image: url(../img/kellywebbutton.png);
     background-position: 50% 50%;
+    @extend .bottomRightShadow;
 }
-
 .grid__item--zoom .grid__overlay__content {
     //-webkit-transform-origin: left;
     //transform-origin: left;
@@ -474,9 +473,8 @@ div#topHeader.affix {
     backface-visibility: hidden;
     opacity: 0;
     width: 100%;
-    height:100%;
-    vertical-align:middle;
-    
+    height: 100%;
+    vertical-align: middle;
 }
 .grid .grid__overlay {
     align-items: center;
@@ -486,106 +484,92 @@ div#topHeader.affix {
     position: relative;
     text-align: left;
     @include transition(all 450ms ease);
-    padding:5%;
+    padding: 5%;
 }
-
-.grid__item:hover
-{
+.grid__item:hover {
     background-position: 30px 30px;
 }
-.grid .grid__overlay:hover
-{
+.grid .grid__overlay:hover {
     opacity: .95;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
-.grid .grid__overlay .grid__overlay__content:hover
-{
+.grid .grid__overlay .grid__overlay__content:hover {
     opacity: 1;
 }
 ///////////////////////////////////////////////////
 // Expand Div
 /////////////////////////////////////////////////
-.r { float: right; }
+.r {
+    float: right;
+}
 
 /*PLAYER*/
 
 .grid__details_hide {
-  //display:none;
-  position: block;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 0px;
-  background: #444;
-  //-webkit-transition: all 0.3s ease;
-  //-moz-transition: all 0.3s ease;
-  //-o-transition: all 0.3s ease;
-  //-ms-transition: all 0.3s ease;
-  //transition: height 0.3s ease;
-  transition: all 1s ease-in;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: 1000;
-  
+    //display:none;
+    position: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background: #444;
+    //-webkit-transition: all 0.3s ease;
+    //-moz-transition: all 0.3s ease;
+    //-o-transition: all 0.3s ease;
+    //-ms-transition: all 0.3s ease;
+    //transition: height 0.3s ease;
+    transition: all 1s ease-in;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 1000;
 }
-.grid__details_show
-{
+.grid__details_show {
     //display:block;
     opacity: 1;
     height: auto;
     transition: all 1s ease-in;
-   
-    
-    
 }
-
 .grid__details.active {
-  margin-top: 0;
-  top: 0 !important;
+    margin-top: 0;
+    top: 0 !important;
 }
-
 .pl-wrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-
 #pl-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50px;
-  width: 100%;
-  background: #333;
-  border-top: 1px solid #444;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: #333;
+    border-top: 1px solid #444;
 }
-
 #pl-bar i {
-  height: 100%;
-  width: 40px;
-  border-left: 1px solid #444;
-  line-height: 50px;
-  text-align: center;
-  color: #999;
-  cursor: pointer;
+    height: 100%;
+    width: 40px;
+    border-left: 1px solid #444;
+    line-height: 50px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
 }
-
 #pl-bar i:first-child {
-  border-left: none;
-  border-right: 1px solid #444;
+    border-left: none;
+    border-right: 1px solid #444;
 }
-
 #pl-bar i:hover {
-  color: #eaeaea;
-  background: #3b3b3b;
+    color: #eaeaea;
+    background: #3b3b3b;
 }
-h2.banner
-{
+h2.banner {
     font-size: 3.5em;
 }
-header li 
-{
-    font-size:1.2em;
+header li {
+    font-size: 1.2em;
 }
+
