@@ -5806,6 +5806,48 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@media only screen and (max-width: 767px) {
+  .hide-sm-down {
+    display: none; } }
+@media only screen and (min-width: 768px) {
+  .hide-sm-up {
+    display: none; } }
+@media only screen and (max-width: 767px) {
+  .hide-sm-down {
+    display: none; } }
+.sectionTitle-font, .sectionTitle {
+  font-size: 1.2em; }
+
+section {
+  font-size: 1.5em; }
+
+/* Experience section */
+.experience h4 {
+  font-size: 1em; }
+
+.techEnviro h4 {
+  margin-right: .5em;
+  display: inline;
+  font-size: 1em; }
+
+.job-title-font, ul.job > li > h4 {
+  font-size: 1em; }
+
+.techEnviro span {
+  font-size: .8em; }
+
+.panel-title {
+  color: #33a4c9;
+  font-size: 1.5em;
+  margin-left: -15px; }
+
+.skillLabel-font, .skillLabel {
+  font-size: 1.2em; }
+
+code {
+  vertical-align: text-bottom;
+  font-size: 60%; }
+
 body {
   font-family: "Droid"; }
 
@@ -5818,7 +5860,7 @@ header hgroup ul {
   list-style: none;
   padding: 0;
   margin: 0 0 20px; }
-header hgroup h2 {
+header hgroup h1 {
   color: #cecece;
   font-style: italic;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); }
@@ -5827,13 +5869,6 @@ header hgroup h2 {
   position: fixed;
   top: 0;
   z-index: 100; }
-
-code {
-  vertical-align: text-bottom;
-  font-size: 60%; }
-
-section {
-  font-size: 2em; }
 
 .sectionTitle:before {
   background-color: #33a4c9;
@@ -5849,12 +5884,7 @@ section {
 .sectionTitle {
   padding: 0 0 0px 70px;
   margin: 50px 0;
-  position: relative;
-  font-size: 1.5em; }
-
-/* Experience section */
-.experience h4 {
-  font-size: 1em; }
+  position: relative; }
 
 ul.jobSummary {
   padding: 0px;
@@ -5880,8 +5910,7 @@ ul.job {
     margin: 15px 0px; }
     ul.job > li > h4 {
       margin: 0;
-      padding: 0;
-      font-size: 1em; }
+      padding: 0; }
   ul.job ul li {
     padding: 0px;
     margin: 5px 5px; }
@@ -5898,14 +5927,6 @@ ul.job {
     padding: 0px;
     margin: 0px;
     padding-left: 1.5em; }
-
-.techEnviro h4 {
-  margin-right: .5em;
-  display: inline;
-  font-size: 1em; }
-
-.techEnviro span {
-  font-size: .8em; }
 
 #skillgraphWrapper-break {
   display: inline-block;
@@ -5926,11 +5947,6 @@ ul.job {
   background-size: 10%;
   background-color: rgba(255, 0, 0, 0.2); }
 
-.panel-title {
-  color: #33a4c9;
-  font-size: 1.5em;
-  margin-left: -15px; }
-
 #skillgraph {
   padding: 1em; }
 
@@ -5945,8 +5961,7 @@ ul.job {
 .skillLabel {
   float: left;
   width: 100%;
-  color: black;
-  font-size: 1.2em; }
+  color: black; }
 
 .skillData, .skillData-Wrapper {
   line-height: 0.1 0.7em;
@@ -5964,34 +5979,6 @@ ul.job {
 .bg-red {
   background-color: red; }
 
-.section {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: justify;
-  font-size: 2.0em; }
-  .section h1 {
-    font-size: 2em;
-    margin: 70px 0 35px 0; }
-  .section p {
-    margin: 1em 0; }
-  @media (min-width: 992px) {
-    .section {
-      float: left;
-      width: 75%; } }
-  @media (min-width: 992px) {
-    .section {
-      margin-left: 8.33333%; } }
-
-.circle .big {
-  color: #33a4c9;
-  font-size: 3.0em; }
-.circle .small {
-  color: #0f434c;
-  line-height: 2.5;
-  font-size: 1.5em; }
-
 html,
 body {
   height: 100%;
@@ -6006,7 +5993,7 @@ body {
 .bg-rust {
   background-color: #33a4c9; }
 
-.bg-lightgray, .skillData-Wrapper, .circle {
+.bg-lightgray, .skillData-Wrapper {
   background-color: #ddd; }
 
 a.anchor {
@@ -6015,19 +6002,19 @@ a.anchor {
   top: -100px;
   visibility: hidden; }
 
-.topHeaderPic {
-  background: url("../img/worldweb.jpg") no-repeat top center fixed;
-  background-size: cover;
-  height: 300px;
-  /*shows menu bar at bottom of screen for browsers that support calc */
-  width: auto;
-  margin: 0;
-  padding: 0;
-  color: black;
-  text-align: center;
-  background-size: 300px auto;
-  background-position-x: 80%; }
-
+@media only screen and (min-width: 768px) {
+  .topHeaderPic {
+    background: url("../img/worldwide-web.jpg") no-repeat top center fixed;
+    background-size: cover;
+    height: 230px;
+    /*shows menu bar at bottom of screen for browsers that support calc */
+    width: auto;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+    background-size: 230px auto;
+    background-position-x: 80%; } }
 #mePic {
   /* The background image */
   background-image: url("../img/me-ver1.jpg");
@@ -6087,7 +6074,7 @@ div#topHeader.affix {
 #myNavbar a:hover {
   background-color: gray; }
 
-@media (min-width: 750px) and (max-width: 900px) {
+@media only screen and (min-width: 768px) {
   #navbar-brand img {
     width: 300px;
     margin-top: -10px; } }
@@ -6107,82 +6094,29 @@ div#topHeader.affix {
 #kelly-menu {
   background-color: #33a4c9; }
 
-.skill-circles {
-  padding-top: 4em;
-  padding-bottom: 1em; }
-
-.circle {
-  border: 3px solid #33a4c9;
-  height: 20em;
-  width: 20em;
-  border-radius: 10em;
-  margin: 0 auto 40px; }
-
-.circle {
-  line-height: 1;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  text-align: center;
-  font-size: 1em; }
-
-.circlewrap {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-
 /*  Portfolio Grid */
-.bottomRightShadow, .grid .grid__item {
-  border: solid 1px #555;
-  background-color: #eed;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
-  -o-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bottomRightShadow, .grid .grid__item {
+    border: solid 1px #555;
+    background-color: #eed;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); } }
+.grid--square .grid__item .grid__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
-@media screen and (min-width: 600px) {
-  .grid--square .grid__item .grid__overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; } }
-@media screen and (min-width: 900px) {
-  .grid--square {
-    height: 0;
-    padding-bottom: 300px; } }
-@media screen and (min-width: 600px) {
-  .grid--square {
-    height: 0; } }
+.grid--square {
+  padding-bottom: 30px; }
+
 .grid {
   overflow: hidden; }
 
-.grid--square .grid__item {
-  height: 0; }
-
-/*
-@media screen and (min-width: 900px)
-{
-.grid--square .grid__item {
-    padding-bottom: 18vw;
-}}
-@media screen and (min-width: 600px)
-{
-.grid--square .grid__item {
-    padding-bottom: 18vw;
-}}
-*/
-@media screen and (min-width: 900px) {
-  .grid .grid__item {
-    width: 33.3333%; } }
-@media screen and (min-width: 600px) {
-  .grid .grid__item {
-    width: 50%; } }
-@media screen and (max-width: 600px) {
-  .grid .grid__wrapper {
-    display: block; }
-
-  .grid .grid__overlay {
-    display: none; } }
 .grid .grid__item {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -6230,65 +6164,8 @@ div#topHeader.affix {
 .grid .grid__overlay .grid__overlay__content:hover {
   opacity: 1; }
 
-.r {
-  float: right; }
-
-/*PLAYER*/
-.grid__details_hide {
-  position: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0px;
-  background: #444;
-  transition: all 1s ease-in;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: 1000; }
-
-.grid__details_show {
-  opacity: 1;
-  height: auto;
-  transition: all 1s ease-in; }
-
-.grid__details.active {
-  margin-top: 0;
-  top: 0 !important; }
-
-.pl-wrap {
-  position: relative;
-  width: 100%;
-  height: 100%; }
-
-#pl-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50px;
-  width: 100%;
-  background: #333;
-  border-top: 1px solid #444; }
-
-#pl-bar i {
-  height: 100%;
-  width: 40px;
-  border-left: 1px solid #444;
-  line-height: 50px;
-  text-align: center;
-  color: #999;
-  cursor: pointer; }
-
-#pl-bar i:first-child {
-  border-left: none;
-  border-right: 1px solid #444; }
-
-#pl-bar i:hover {
-  color: #eaeaea;
-  background: #3b3b3b; }
-
-h2.banner {
-  font-size: 3.5em; }
-
-header li {
+footer section {
   font-size: 1.2em; }
+
+ul.alerts {
+  list-style-type: circle; }
