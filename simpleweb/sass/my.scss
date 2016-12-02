@@ -1,5 +1,6 @@
 @import "bootstrap/assets/stylesheets/bootstrap";
 @import "flex.scss";
+
 $color-rust: #770e0b;
 $color-lightBlue:#33a4c9;
 $color-blue: #0f434c;
@@ -17,6 +18,8 @@ $md-max: "only screen and (max-width:1199px)";
 $md-lg: "screen and (min-width: 992px) and (max-width:1199px)";
 $lg-min: "only screen and (min-width:1200px)";
 $lg-max: "only screen ";
+
+
 
 @media  only screen and (max-width:767px)
 {

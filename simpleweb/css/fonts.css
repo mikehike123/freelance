@@ -1,22 +1,35 @@
 /*
-Error: File to import not found or unreadable: bootstrap-compass.
-       Load path: C:/xampp/htdocs/freelance/freelance/simpleweb/sass/bootstrap/templates/project
-        on line 2 of C:\xampp\htdocs\freelance\freelance\simpleweb\sass\bootstrap\templates\project\styles.sass
+Error: Undefined variable: "$color-lightBlue".
+        on line 32 of C:\xampp\htdocs\freelance\freelance\simpleweb\sass\fonts.scss
 
-1: // Import Bootstrap Compass integration
-2: @import "bootstrap-compass"
-3: // Import custom Bootstrap variables
-4: @import "bootstrap-variables"
-5: // Import Bootstrap for Sass
-6: @import "bootstrap"
+27: .techEnviro span {
+28:     font-size: .8em;
+29: }
+30: 
+31: .panel-title {
+32:     color: $color-lightBlue;
+33:     font-size: 1.5em;
+34:     margin-left: -15px;
+35: }
+36: 
+37: 
 
 Backtrace:
-C:\xampp\htdocs\freelance\freelance\simpleweb\sass\bootstrap\templates\project\styles.sass:2
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+C:\xampp\htdocs\freelance\freelance\simpleweb\sass\fonts.scss:32
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
@@ -48,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bootstrap-compass.\A        Load path: C:/xampp/htdocs/freelance/freelance/simpleweb/sass/bootstrap/templates/project\A         on line 2 of C:\xampp\htdocs\freelance\freelance\simpleweb\sass\bootstrap\templates\project\styles.sass\A \A 1: // Import Bootstrap Compass integration\A 2: @import \"bootstrap-compass\"\A 3: // Import custom Bootstrap variables\A 4: @import \"bootstrap-variables\"\A 5: // Import Bootstrap for Sass\A 6: @import \"bootstrap\""; }
+  content: "Error: Undefined variable: \"$color-lightBlue\".\A         on line 32 of C:\xampp\htdocs\freelance\freelance\simpleweb\sass\fonts.scss\A \A 27: .techEnviro span {\A 28:     font-size: .8em;\A 29: }\A 30: \A 31: .panel-title {\A 32:     color: $color-lightBlue;\A 33:     font-size: 1.5em;\A 34:     margin-left: -15px;\A 35: }\A 36: \A 37: "; }
