@@ -5806,15 +5806,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-@media only screen and (max-width: 767px) {
-  .hide-sm-down {
-    display: none; } }
-@media only screen and (min-width: 768px) {
-  .hide-sm-up {
-    display: none; } }
-@media only screen and (max-width: 767px) {
-  .hide-sm-down {
-    display: none; } }
 .sectionTitle-font, .sectionTitle {
   font-size: 1.2em; }
 

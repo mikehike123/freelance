@@ -133,24 +133,22 @@
                 <div class="grid__wrapper">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
-                            <a class="hide-sm-up" href="http://r-recruitingusa.com/">
-                                <a class="hide-sm-down" href="relentless.php">
-                                    <div class="grid__item" style="background-image:url(img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
-                                        <div class="grid__overlay">
-                                            <div class="grid__overlay__content">
 
-                                                <h5 class="title">Relentless Recruiting</h5>
-                                                <p class="medium">One Page Web Site</p>
 
-                                            </div>
+                            <a class="clickInDesktop" href="portfolioDetails.php">
+                                <div class="grid__item" style="background-image:url(img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
+                                    <div class="grid__overlay">
+                                        <div class="grid__overlay__content">
+
+                                            <h5 class="title">Relentless Recruiting</h5>
+                                            <p class="medium">One Page Web Site</p>
+
                                         </div>
-
-
                                     </div>
-                                </a>
+                                </div>
                             </a>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -183,8 +181,8 @@
                     <div class="sectionTitle">Employment History</div>
 
                     <ul class="job">
-                        
-                        
+
+
                         <li>
                             <h4><strong>Senior Software Contractor (11/22/10-12/22/10)</strong></h4>
                             <h4><strong>Chipton Ross/Boeing</strong></h4>
@@ -202,7 +200,7 @@
                             <div class="techEnviro">
                                 <h4><strong>Technical Environment:</strong></h4><span>php, html, mysql, Laravel, WordPress</span></div>
                             <ul class="responsible">
-                                <li>I restore vintage bikes and resell them.  I've had various websites which I've coded in whatever skill which I was focusing on at the time. </li>
+                                <li>I restore vintage bikes and resell them. I've had various websites which I've coded in whatever skill which I was focusing on at the time. </li>
                             </ul>
                         </li>
 
@@ -373,7 +371,7 @@
             <div class="sectionTitle">Contact Me</div>
             <div class="row">
                 <div class="col-md-12" <?php echo (MailErr::$Status===MailStatus::NotSentYet ? " style='display:none;'" : "") ?>>
-                    
+
                     <div class="alert alert-success" <?php echo (MailErr::$Status===MailStatus::Successful ? "" : " style='display:none;'" ) ?>><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong></div>
                     <div class="alert alert-danger" <?php echo (MailErr::$Status===MailStatus::Failed ? "" : " style='display:none;'" ) ?>>
                         <span class="glyphicon glyphicon-alert"></span><strong> Error! <?= MailErr::Message();  ?></strong></div>
@@ -386,30 +384,30 @@
                             <div class="input-group">
                                 <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required />
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-ok "></i></span></div>
-                                 <div class="help-block with-errors"></div>
+                            <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <label for="InputEmail">Your Email</label>
                             <div class="input-group">
                                 <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required />
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-ok "></i></span></div>
-                                <div class="help-block with-errors"></div>
+                            <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <label for="InputMessage">Project Description</label>
                             <div class="input-group">
                                 <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Project Description" required></textarea>
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-ok "></i></span>
-                                
+
                             </div>
-                            <div class="help-block with-errors"></div>     
+                            <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
                             <div class="input-group">
                                 <input type="text" class="form-control" name="InputReal" id="InputReal" data-equals="7" required />
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-ok "></i></span>
-                                
+
                             </div>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -427,76 +425,73 @@
         </div>
     </section>
 
-   
+
 
     <div id="mePic"></div>
 
 
 
     <script type="text/javascript">
-        
-        
+        $(document).ready(function() {
 
-        $(document).ready( function() {
-        
-            
+
             $('#contactForm').validator({
                 custom: {
-                      equals: function($el) {
+                    equals: function($el) {
                         var matchValue = $el.data("equals") // foo
-                        //empty string test
+                            //empty string test
                         if (!$el.val())
-                            return ;
+                            return;
                         if ($el.val() != matchValue) {
-                          return "Hey, that's not valid! It's gotta be " + matchValue
+                            return "Hey, that's not valid! It's gotta be " + matchValue
                         }
-                      }
-                }
-            });
-            
-        
-        function loadSkillgraph() {
-            $(".skillData").each(function(index, element) {
-                // element == this
-                var mydata = $(element).data();
-                var cnt = 0;
-
-                //recursive call with a time delay so user can see graph draw.
-                function go() {
-                    if (cnt++ < mydata['percent']) {
-                        setTimeout(go, 10);
                     }
-                    $(element).css('width', cnt + '%');
-
                 }
-
-                go();
-
             });
 
-        }
-        var inview = new Waypoint.Inview({
-            element: $('#skillgraph')[0],
-            enter: function(direction) {
-                //alert('Enter triggered with direction ' + direction)
-                loadSkillgraph();
-            },
-            entered: function(direction) {
-                //alert('Entered triggered with direction ' + direction)
-            },
-            exit: function(direction) {
-                //alert('Exit triggered with direction ' + direction)
-            },
-            exited: function(direction) {
-                //alert('Exited triggered with direction ' + direction)
-            }
-        });
 
-        // Closes the Responsive Menu on Menu Item Click
-        $('.navbar-collapse ul li a').click(function() {
-            $('.navbar-toggle:visible').click();
-        });
-       
+            function loadSkillgraph() {
+                $(".skillData").each(function(index, element) {
+                    // element == this
+                    var mydata = $(element).data();
+                    var cnt = 0;
+
+                    //recursive call with a time delay so user can see graph draw.
+                    function go() {
+                        if (cnt++ < mydata['percent']) {
+                            setTimeout(go, 10);
+                        }
+                        $(element).css('width', cnt + '%');
+
+                    }
+
+                    go();
+
+                });
+
+            }
+            var inview = new Waypoint.Inview({
+                element: $('#skillgraph')[0],
+                enter: function(direction) {
+                    //alert('Enter triggered with direction ' + direction)
+                    loadSkillgraph();
+                },
+                entered: function(direction) {
+                    //alert('Entered triggered with direction ' + direction)
+                },
+                exit: function(direction) {
+                    //alert('Exit triggered with direction ' + direction)
+                },
+                exited: function(direction) {
+                    //alert('Exited triggered with direction ' + direction)
+                }
+            });
+
+            // Closes the Responsive Menu on Menu Item Click
+            $('.navbar-collapse ul li a').click(function() {
+                $('.navbar-toggle:visible').click();
+            });
+
             var sticky = new Waypoint.Sticky({
                     element: $('#topHeader')[0]
                 })
@@ -510,7 +505,7 @@
         });
 
     </script>
-    
+
     <?php
     $body =ob_get_contents();
     ob_end_clean();

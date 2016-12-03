@@ -14,6 +14,15 @@
 </style>
 	<div class="container">
         
+        <div class="row" style="">
+                <div class="col-lg-offset-3 col-lg-6 ">
+                    <ul class="pager">
+                        <li><a href="index.php#a-work">❮ Previous Project</a></li>
+                        <li><a href="index.php#a-work">Back To Home</a></li>
+                        <li><a href="#">Next Project  ❯</a></li>
+                    </ul>
+                </div>
+            </div>
 		<div class="card">
             
             <h3 class="product-title">Relentless Computing</h3>

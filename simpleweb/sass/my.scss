@@ -1,6 +1,5 @@
 @import "bootstrap/assets/stylesheets/bootstrap";
 @import "flex.scss";
-
 $color-rust: #770e0b;
 $color-lightBlue:#33a4c9;
 $color-blue: #0f434c;
@@ -18,31 +17,6 @@ $md-max: "only screen and (max-width:1199px)";
 $md-lg: "screen and (min-width: 992px) and (max-width:1199px)";
 $lg-min: "only screen and (min-width:1200px)";
 $lg-max: "only screen ";
-
-
-
-@media  only screen and (max-width:767px)
-{
-.hide-sm-down
-    {
-        display:none;
-    }
-}
-@media #{$sm-min}
-{
-    .hide-sm-up
-    {
-        display:none;
-    }
-}
-
-@media #{$xs-sm}
-{
-    .hide-sm-down
-    {
-        display:none;
-    }
-}
 
 
 @import "relentless.scss";
@@ -416,14 +390,11 @@ div#topHeader.affix {
 .grid .grid__overlay .grid__overlay__content:hover {
     opacity: 1;
 }
-footer
-{
-    section{
-        font-size:1.2em;
+footer {
+    section {
+        font-size: 1.2em;
     }
-    
 }
-ul.alerts
-{
+ul.alerts {
     list-style-type: circle;
 }
