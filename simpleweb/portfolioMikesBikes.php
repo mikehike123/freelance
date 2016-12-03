@@ -17,7 +17,7 @@
         <div class="row" style="">
                 <div class="col-lg-offset-3 col-lg-6 ">
                     <ul class="pager">
-                        <li><a href="portfolioDetails.php">❮ Previous Project</a></li>
+                        <li><a href="portfolioRelentless.php">❮ Previous Project</a></li>
                         <li><a href="index.php#a-work">Back To Home</a></li>
                         <li><a href="#">Next Project  ❯</a></li>
                     </ul>

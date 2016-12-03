@@ -1,5 +1,6 @@
 @import "bootstrap/assets/stylesheets/bootstrap";
 @import "flex.scss";
+
 $color-rust: #770e0b;
 $color-lightBlue:#33a4c9;
 $color-blue: #0f434c;
@@ -19,8 +20,7 @@ $lg-min: "only screen and (min-width:1200px)";
 $lg-max: "only screen ";
 
 
-@import "relentless.scss";
-@import "fonts.scss";
+
 $small-screen: 320px;
 $large-screen: 900px;
 $middle-screen:750px;
@@ -36,6 +36,11 @@ $middle-screen:750px;
     -o-transition: $args;
     transition: $args;
 }
+
+@import "relentless.scss";
+@import "fonts.scss";
+@import "portfolio.scss";
+
 body {
     font-family: "Droid";
 }

@@ -129,30 +129,49 @@
 
 
             <div class="sectionTitle">Examples Of My Work</div>
-            <div class="grid section--media grid--square">
-                <div class="grid__wrapper">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
+            <div class="container" style="margin-top:10px;">
+                <div class="row form-group">
+                    <div class="col-xs-12 col-md-4" style="hieght:300px;">
+                        <div class="panel panel-default">
+                            <div class="panel-image hide-panel-body">
+                                <img src="img/kellywebbutton.png" class="panel-image-preview" />
+                            </div>
 
-
-                            <a class="clickInDesktop" href="portfolioDetails.php">
-                                <div class="grid__item" style="background-image:url(img/kellywebbutton.png)"><img src="img/kellywebbutton.png" style="visibility:hidden; width:100%;height:100%;" />
-                                    <div class="grid__overlay">
-                                        <div class="grid__overlay__content">
-
-                                            <h5 class="title">Relentless Recruiting</h5>
-                                            <p class="medium">One Page Web Site</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                            <div class="panel-footer text-center">
+                                <h4>RELENTLESS RECRUITING</h4>
+                                <a href="portfolioRelentless.php">See More<span class="glyphicon glyphicon-share-alt"></span></a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-image hide-panel-body">
+                                <img src="img/mikesbikes.png" class="panel-image-preview" />
+                            </div>
 
+                            <div class="panel-footer text-center">
+                                <h4>MIKES USED BIKE'S</h4>
+                                <a href="portfolioMikesBikes.php">See More<span class="glyphicon glyphicon-share-alt"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-image hide-panel-body">
+                                <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52d09387ae003_1.JPG" class="panel-image-preview" />
+                            </div>
+                            
+                            <div class="panel-footer text-center">
+                                <h4>RELENTLESS RECRUITING</h4>
+                                <a href="#share">See More<span class="glyphicon glyphicon-share-alt"></span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </section>
     <a class="anchor" id="a-experience"></a>
     <!-- Expériences -->
