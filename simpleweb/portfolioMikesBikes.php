@@ -19,7 +19,7 @@
                     <ul class="pager">
                         <li><a href="portfolioRelentless.php">❮ Previous Project</a></li>
                         <li><a href="index.php#a-work">Back To Home</a></li>
-                        <li><a href="#">Next Project  ❯</a></li>
+                        <li><a href="portfolioSwim.php">Next Project  ❯</a></li>
                     </ul>
                 </div>
             </div>

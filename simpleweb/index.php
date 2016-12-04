@@ -158,12 +158,12 @@
                     <div class="col-xs-12 col-md-4">
                         <div class="panel panel-default">
                             <div class="panel-image hide-panel-body">
-                                <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52d09387ae003_1.JPG" class="panel-image-preview" />
+                                <img src="img/swim/instructorBtn.png" class="panel-image-preview" />
                             </div>
                             
                             <div class="panel-footer text-center">
-                                <h4>RELENTLESS RECRUITING</h4>
-                                <a href="#share">See More<span class="glyphicon glyphicon-share-alt"></span></a>
+                                <h4>Swim Admin</h4>
+                                <a href="portfolioSwim.php">See More<span class="glyphicon glyphicon-share-alt"></span></a>
                             </div>
                         </div>
                     </div>
