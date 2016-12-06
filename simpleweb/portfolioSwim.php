@@ -36,7 +36,7 @@
                     </div>
                     <div class="details col-md-3">
                         <h4 class="price">Overview:</h4>
-                        <p class="product-description">Created using the Laravel php framework.  The application controls access to it's various features by assigning security roles to  users. For example the swim instructors would not be able to add new users or would they be able to create new skills types but they would be able to evaluate swimmers based on the skill types already in the system.</p>
+                        <p class="product-description">Created using the Laravel php framework.  The application controls access to it's various features by assigning security roles to  users. For example, the swim instructors are allowed to evaluate swimmers based on the skill types already in the system but not allowed to create new skills.  Swim Admins are allowed to create new skill types.</p>
                         <h4 class="price">Technology Used:</h4>
                         <p class="vote"><strong><em>html, bootstrap, Laravel</em></strong></p>
                     </div>

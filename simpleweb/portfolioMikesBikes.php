@@ -38,7 +38,7 @@
             </div>
             <div class="details col-md-6">
                 <h4 class="price">Overview:</h4>
-                <p class="product-description">For my vintage bike business I created a Wordpress site from scratch. I add new bikes in the admin section as a custom post type.</p>
+                <p class="product-description">For my vintage bike business, I created a Wordpress site from scratch. I add new bikes in the admin section as a custom post type.</p>
                 <h4 class="price">Technology Used:</h4>
                 <p class="vote"><strong><em>html, bootstrap, WordPress</em></strong></p>
                 <p><a href="http://vintagebikes.mossycity.com" target="_blank" class="whiteButton"  >Go To Live Site<span class="glyphicon glyphicon-share-alt"></span></a></p>

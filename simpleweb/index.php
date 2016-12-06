@@ -216,8 +216,15 @@
                     <div class="sectionTitle">Employment History</div>
 
                     <ul class="job">
-
-
+                        
+                        <li>
+                            <h4><strong>VintageBikes.mossycity.com(1/1/12-Present)</strong></h4>
+                            <div class="techEnviro">
+                                <h4><strong>Technical Environment:</strong></h4><span>c#, php, html, mysql, WordPress</span></div>
+                            <ul class="responsible">
+                                <li>Restore vintage bikes/resell. Coded various versions of the business web site.  The curent version is in WordPress. </li>
+                            </ul>
+                        </li>
                         <li>
                             <h4><strong>Senior Software Contractor (11/22/10-12/22/10)</strong></h4>
                             <h4><strong>Chipton Ross/Boeing</strong></h4>
@@ -230,14 +237,7 @@
                                 <li>Gathered requirements, designed and implemented an MS Excel shared macro to quickly set the working folding.</li>
                             </ul>
                         </li>
-                        <li>
-                            <h4><strong>VintageBikes.mossycity.com(1/1/2012-Present)</strong></h4>
-                            <div class="techEnviro">
-                                <h4><strong>Technical Environment:</strong></h4><span>php, html, mysql, Laravel, WordPress</span></div>
-                            <ul class="responsible">
-                                <li>I restore vintage bikes and resell them. I've had various websites which I've coded in whatever skill which I was focusing on at the time. </li>
-                            </ul>
-                        </li>
+                        
 
                         <li>
                             <h4><strong>MCSoftware - Freelance Projects (7/06-Present)</strong></h4>
