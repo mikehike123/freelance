@@ -39,7 +39,7 @@ try {
         //Whether to use SMTP authentication
         $mail->SMTPAuth    = true;
         //Username to use for SMTP authentication
-        $mail->Username    = "mikeclark@vintagebikes.mossycity.com";
+        $mail->Username    = "mikeclark@mossycity.com";
         //Password to use for SMTP authentication
         $mail->Password    = "maddie123";
         //$mail->SMTPSecure  = 'ssl';

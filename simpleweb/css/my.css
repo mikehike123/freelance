@@ -5807,6 +5807,31 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.whiteButton {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px; }
+
+.whiteButton:hover {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  color: white; }
+
+#loader1 {
+  position: absolute;
+  left: 130px;
+  top: 50px;
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid #777777;
+  width: 100px;
+  height: 100px; }
+
 .sectionTitle-font, .sectionTitle {
   font-size: 1.2em; }
 
@@ -6106,6 +6131,9 @@ div#topHeader.affix {
   background-color: #33a4c9; }
 
 /*  Portfolio Grid */
+.panel, .card {
+  box-shadow: 0px 0px 4px #777777; }
+
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .bottomRightShadow, .grid .grid__item {

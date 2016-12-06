@@ -27,7 +27,7 @@
 
                     <header>
                         <h2>Mobile</h2></header>
-                    <iframe src="http://r-recruitingusa.com/" style="width:375px;height:600px"></iframe>
+                    <iframe id="iframe1" src="http://r-recruitingusa.com/" style="width:375px;height:600px"></iframe>
                 </div>
                 <div class="col-xl-2 col-lg-3">
                     <header>
@@ -190,6 +190,14 @@
 
         });
 
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#iframe1').on('load', function () {
+                $('#loader1').hide();
+            });
+        });
     </script>
     <?php
     $body =ob_get_contents();

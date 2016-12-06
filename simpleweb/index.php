@@ -132,40 +132,56 @@
             <div class="container" style="margin-top:10px;">
                 <div class="row form-group">
                     <div class="col-xs-12 col-md-4" style="hieght:300px;">
-                        <div class="panel panel-default">
-                            <div class="panel-image hide-panel-body">
-                                <img src="img/kellywebbutton.png" class="panel-image-preview" />
-                            </div>
+                        <a href="portfolioRelentless.php">
+                            <div class="panel panel-default">
+                                <div class="panel-image hide-panel-body">
+                                    <img src="img/kellywebbutton.png" class="panel-image-preview" />
+                                </div>
 
-                            <div class="panel-footer text-center">
-                                <h4>RELENTLESS RECRUITING</h4>
-                                <a href="portfolioRelentless.php">See More<span class="glyphicon glyphicon-share-alt"></span></a>
+                                <div class="panel-footer text-center">
+                                    <h4>RELENTLESS RECRUITING</h4> See More<span class="glyphicon glyphicon-share-alt"></span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-image hide-panel-body">
-                                <img src="img/mikesbikes.png" class="panel-image-preview" />
-                            </div>
+                        <a href="portfolioMikesBikes.php">
+                            <div class="panel panel-default">
+                                <div class="panel-image hide-panel-body">
+                                    <img src="img/mikesbikes.png" class="panel-image-preview" />
+                                </div>
 
-                            <div class="panel-footer text-center">
-                                <h4>MIKES USED BIKE'S</h4>
-                                <a href="portfolioMikesBikes.php">See More<span class="glyphicon glyphicon-share-alt"></span></a>
+                                <div class="panel-footer text-center">
+                                    <h4>MIKES USED BIKE'S</h4> See More<span class="glyphicon glyphicon-share-alt"></span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-image hide-panel-body">
-                                <img src="img/swim/instructorBtn.png" class="panel-image-preview" />
+                        <a href="portfolioSwim.php">
+                            <div class="panel panel-default">
+                                <div class="panel-image hide-panel-body">
+                                    <img src="img/swim/instructorBtn.png" class="panel-image-preview" />
+                                </div>
+
+                                <div class="panel-footer text-center">
+                                    <h4>SWIM ADMIN</h4> See More<span class="glyphicon glyphicon-share-alt"></span>
+                                </div>
                             </div>
-                            
-                            <div class="panel-footer text-center">
-                                <h4>Swim Admin</h4>
-                                <a href="portfolioSwim.php">See More<span class="glyphicon glyphicon-share-alt"></span></a>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <a href="portfolioWedding.php">
+                            <div class="panel panel-default">
+                                <div class="panel-image hide-panel-body">
+                                    <img src="img/wedding2.png" class="panel-image-preview" />
+                                </div>
+
+                                <div class="panel-footer text-center">
+                                    <h4>Wedding CrowdFunding</h4> See More<span class="glyphicon glyphicon-share-alt"></span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -387,16 +403,21 @@
     <a class="anchor" id="a-contact"></a>
     <section style="margin-bottom:30px;">
         <div class="container">
-            <div class="sectionTitle">Contact Me</div>
-            <div class="row">
-                <div class="col-md-12" <?php echo (MailErr::$Status===MailStatus::NotSentYet ? " style='display:none;'" : "") ?>>
+            <div class="sectionTitle">Let's Chat!</div>
 
-                    <div class="alert alert-success" <?php echo (MailErr::$Status===MailStatus::Successful ? "" : " style='display:none;'" ) ?>><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong></div>
-                    <div class="alert alert-danger" <?php echo (MailErr::$Status===MailStatus::Failed ? "" : " style='display:none;'" ) ?>>
-                        <span class="glyphicon glyphicon-alert"></span><strong> Error! <?= MailErr::Message();  ?></strong></div>
-                </div>
+            <div class="row ">
+
+
                 <form id="contactForm" role="form" action="#a-contact" method="post">
-                    <div class="col-lg-offset-3 col-lg-6 col-sm-12">
+                    <div class="col-lg-offset-1 col-lg-8 col-sm-12 panel">
+
+                        <p class="hook"><em>Are you ready to hire an experienced web developer? That's great! I look forward to hearing from you.</em> </p>
+
+                        <div class="col-md-12" <?php echo (MailErr::$Status===MailStatus::NotSentYet ? " style='display:none;'" : "") ?>>
+                            <div class="alert alert-success" <?php echo (MailErr::$Status===MailStatus::Successful ? "" : " style='display:none;'" ) ?>><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong></div>
+                            <div class="alert alert-danger" <?php echo (MailErr::$Status===MailStatus::Failed ? "" : " style='display:none;'" ) ?>>
+                                <span class="glyphicon glyphicon-alert"></span><strong> Error! <?= MailErr::Message();  ?></strong></div>
+                        </div>
 
                         <div class="form-group">
                             <label for="InputName">Your Name</label>

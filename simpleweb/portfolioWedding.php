@@ -17,14 +17,15 @@
         <div class="row" style="">
                 <div class="col-lg-offset-3 col-lg-6 ">
                     <ul class="pager">
-                        <li><a href="portfolioRelentless.php">❮ Previous Project</a></li>
+                        <li><a href="portfolioSwim.php">❮ Previous Project</a></li>
                         <li><a href="index.php#a-work">Back To Home</a></li>
-                        <li><a href="portfolioSwim.php">Next Project  ❯</a></li>
+                        <li><a href="portfolioRelentless.php">Next Project  ❯</a></li>
                     </ul>
                 </div>
+                
             </div>
 		<div class="card">
-    <h3 class="product-title">Mike's Used bikes</h3>
+    <h3 class="product-title">Wedding CrowdFunding</h3>
     <div class="container-fliud">
         <div class="wrapper row">
             <div class="preview col-lg-5">
@@ -32,16 +33,18 @@
                     <div class="tab-pane active" id="pic-1">
                         <h4 class="price">Mobile View:</h4>
                         <?php include_once("loaderImg.html"); ?>
-                        <iframe id="iframe1" src="http://vintagebikes.mossycity.com/" style="width:375px;height:600px"></iframe>
+                        <iframe id="iframe1" src="http://wedding.mossycity.com/" style="width:375px;height:600px"></iframe>
                     </div>
                 </div>
             </div>
             <div class="details col-md-6">
                 <h4 class="price">Overview:</h4>
-                <p class="product-description">For my vintage bike business I created a Wordpress site from scratch. I add new bikes in the admin section as a custom post type.</p>
+                <p class="product-description">I surprised my daughter with this site. Unfortunately, she felt the concept of crowd funding wedding gifts was tacky so the project was shelved.  However, I'm including it in my portfolio since it shows my skills.</p>
+                <p class="product-description">The Wordpress template was made from scratch using bootstrap and html.  On the back-end I use a custom post type for the registery gifts.  
+                
                 <h4 class="price">Technology Used:</h4>
                 <p class="vote"><strong><em>html, bootstrap, WordPress</em></strong></p>
-                <p><a href="http://vintagebikes.mossycity.com" target="_blank" class="whiteButton"  >Go To Live Site<span class="glyphicon glyphicon-share-alt"></span></a></p>
+                <p><a href="http://wedding.mossycity.com" target="_blank" class="whiteButton"  >Go To Live Site<span class="glyphicon glyphicon-share-alt"></span></a></p>
             </div>
         </div>
     </div>

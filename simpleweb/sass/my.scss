@@ -37,6 +37,36 @@ $middle-screen:750px;
     transition: $args;
 }
 
+.whiteButton {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.whiteButton:hover {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    color:white;
+}
+
+#loader1 {
+    position:absolute;
+    left:130px;
+    top:50px;
+    border-radius:20px;
+    padding:25px;
+    border:1px solid #777777;
+    //background:#ffffff;
+    //box-shadow:0px 0px 10px #777777;
+    width:100px;
+    height:100px;
+}
+
 @import "relentless.scss";
 @import "fonts.scss";
 @import "portfolio.scss";
@@ -321,6 +351,10 @@ div#topHeader.affix {
 
 /*  Portfolio Grid */
 
+.panel, .card
+{
+    box-shadow: 0px 0px 4px #777777;
+}
 
 /* Small devices (tablets, 768px and up) */
 

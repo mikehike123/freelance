@@ -63,9 +63,13 @@ if(!isset($pageName))
                         <h2>Mike Clark</h2>
                         <ul>
                             <li>Seattle, Wa</li>
-                            <li><a href="mailto:mikeclark@mossycity.com">mikeclark@mossycity.com&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;</a></li>
-                            <li><a href="http://vintagebikes.mossycity.com/mikeclark">http://vintagebikes.mossycity.com/mikeclark</a></li>
-                            <li><a href="#a-contact">by contact form</a></li>
+                            <li><a href="https://www.linkedin.com/in/michael-clark-webdeveloper" target="_blank">Linkedin&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true" ></i>&nbsp;</a></li>
+                            <li><a href="#a-contact">contact me via form </a></li>
+                            
+                            <!--
+                            <li><a href="http://mikeclark.mossycity.com">http://vintagebikes.mossycity.com/mikeclark</a></li>
+                            
+                            -->
                         </ul>
                     </hgroup>
 
@@ -129,21 +133,14 @@ if(!isset($pageName))
         ?>
 
             <footer class="container-fluid text-center bg-lightgray">
-
+                <!--  comment out email so that customers contact through form.
                 <section id="contactInfo">
                     <div class="container">
-                        <div class="row ">
-                            <div class="col-lg-8 col-lg-offset-2 text-center">
-                                <h2 class="section-heading">Let's Chat!</h2>
-                                <hr class="primary">
-                                <p class="hook"> Are you ready to hire an experienced web developer? That's great! Give us a call or send an email for a <u>very confidential</u> discussion on how we can help you!</p>
-                            </div>
-                        </div>
-
+                        
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-2 text-center ">
 
-                                <a href="mailto:mikeclark@mossycity.com" style="color:black;"><i style="" class="fa fa-envelope-o fa-2x sr-contact"></i>
+                                <a href="mailto:#@mossycity#.com" style="color:black;"><i style="" class="fa fa-envelope-o fa-2x sr-contact"></i>
                                 <p>mikeclark@mossycity.com</p></a>
                             </div>
 
@@ -153,11 +150,12 @@ if(!isset($pageName))
 
 
                 </section>
-
-                <div class="copyrights">
+                -->
+                <div class="copyrights" style="margin-top:25px;">
                     <p>Mossy City © 2016, All Rights Reserved
                         <br />
                         <span>Web Design By: Mike Clark</span></p>
+                     <p><a href="https://www.linkedin.com/in/michael-clark-webdeveloper" target="_blank">Linkedin&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;</a></p>
                 </div>
             </footer>
 
