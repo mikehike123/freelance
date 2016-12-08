@@ -18,8 +18,10 @@
             <div class="col-lg-offset-3 col-lg-6 ">
                 <ul class="pager">
                     <li><a href="portfolioMikesBikes.php">❮ Previous Project</a></li>
-                    <li><a href="index.php#a-work">Back To Home</a></li>
                     <li><a href="portfolioWedding.php">Next Project  ❯</a></li>
+                </ul>
+                <ul class="pager">
+                    <li><a href="index.php#a-work">Back To Home</a></li>
                 </ul>
             </div>
         </div>
@@ -36,14 +38,14 @@
                     </div>
                     <div class="details col-md-3">
                         <h4 class="price">Overview:</h4>
-                        <p class="product-description">Created using the Laravel php framework.  The application controls access to it's various features by assigning security roles to  users. For example, the swim instructors are allowed to evaluate swimmers based on the skill types already in the system but not allowed to create new skills.  Swim Admins are allowed to create new skill types.</p>
+                        <p class="product-description">Created using the Laravel php framework. The application controls access to it's various features by assigning security roles to users. For example swim instructors would be permitted to evaluate swimmers based on existing skill types but would not be able to add new skills types. In contrast, swim admins could add new skill types but 
                         <h4 class="price">Technology Used:</h4>
                         <p class="vote"><strong><em>html, bootstrap, Laravel</em></strong></p>
                     </div>
-                    
+
                 </div>
-                
-            <?php
+
+                <?php
     $body =ob_get_contents();
     ob_end_clean();
     include_once "template.php";

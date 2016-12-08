@@ -18,8 +18,10 @@
             <div class="col-lg-offset-3 col-lg-6 ">
                 <ul class="pager">
                     <li><a href="portfolioWedding.php">❮ Previous Project</a></li>
-                    <li><a href="index.php#a-work">Back To Home</a></li>
                     <li><a href="portfolioMikesBikes.php">Next Project  ❯</a></li>
+                </ul>
+                <ul class="pager">
+                    <li><a href="index.php#a-work">Back To Home</a></li>
                 </ul>
             </div>
         </div>
@@ -29,12 +31,11 @@
             <div class="container-fliud">
 
                 <div class="wrapper row">
-                    <div class="hidden-xs preview-pic ">
-                        <div class="preview col-lg-5">
+                    <div class="preview col-lg-5">
+                        <div class="hidden-xs preview-pic tab-content">
                             <div class="tab-pane active" id="pic-1">
                                 <h4 class="price">Mobile View:</h4>
-                                <?php include_once("loaderImg.html"); ?>
-                                <iframe id="iframe1" src="http://r-recruitingusa.com/" style="width:375px;height:600px"></iframe>
+                                <img src="img/mobile_screen_shots/kelly.png" />
                             </div>
                         </div>
 
@@ -42,10 +43,10 @@
                     </div>
                     <div class="details col-md-6">
                         <h4 class="price">Overview:</h4>
-                        <p class="product-description">Created a single page website from scratch for a new Recruiting company. I had help with the Logo.</p>
+                        <p class="product-description">Created a single page website from scratch for a new Recruiting company. Someone else did the top logo.</p>
                         <h4 class="price">Technology Used:</h4>
                         <p class="vote"><strong><em>html, bootstrap</em></strong></p>
-                        <p><a href="http://r-recruitingusa.com/" target="_blank" class="whiteButton"  >Go To Live Site<span class="glyphicon glyphicon-share-alt"></span></a></p>
+                        <p><a href="http://r-recruitingusa.com/" target="_blank" class="whiteButton">Go To Live Site<span class="glyphicon glyphicon-share-alt"></span></a></p>
 
                     </div>
                 </div>

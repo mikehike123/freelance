@@ -27,22 +27,9 @@ if(!isset($pageName))
         <meta name="author" content="" />
         <title>Relentless Recruiting LLC</title>
         <link rel="icon" href="">
-
-
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-        <script src="js/waypoints/lib/jquery.waypoints.min.js"></script>
-        <script src="js/waypoints/lib/shortcuts/inview.min.js"></script>
-        <script src="js/waypoints/lib/shortcuts/sticky.min.js"></script>
-        <script src="js/validator.js"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
         <!-- Theme CSS 
     <link href="css/creative.css?version=1" rel="stylesheet" />
     -->
@@ -58,25 +45,40 @@ if(!isset($pageName))
         <header role="banner" class="topHeaderPic banner">
             <div class="container">
                 <div class="row">
-                    <hgroup class="col-sm-6">
-                        <h1>Web Developer</h1>
-                        <h2>Mike Clark</h2>
-                        <ul>
-                            <li>Seattle, Wa</li>
-                            <li><a href="https://www.linkedin.com/in/michael-clark-webdeveloper" target="_blank">Linkedin&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true" ></i>&nbsp;</a></li>
-                            <li><a href="#a-contact">contact me via form </a></li>
-                            
-                            <!--
-                            <li><a href="http://mikeclark.mossycity.com">http://vintagebikes.mossycity.com/mikeclark</a></li>
-                            
-                            -->
-                        </ul>
-                    </hgroup>
+                    <div class=" col-md-7 col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                                <h1 class="webDev">Web Developer</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-2">
+                                <img src="img/meheadBlueBack.png" style="margin-top:20px;" />
+                            </div>
+                            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                                <hgroup >
+                                    <h2>Mike Clark</h2>
+                                    <ul>
+                                        <li style="margin-bottom:10px;">Seattle, Wa</li>
+                                        <li style="margin-bottom:10px;"><a href="https://www.linkedin.com/in/michael-clark-webdeveloper" target="_blank">Linkedin&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true" ></i>&nbsp;</a></li>
+                                        <li><a href="#a-contact">contact me via form </a></li>
+
+                                        <!--
+                                        <li><a href="http://mikeclark.mossycity.com">http://vintagebikes.mossycity.com/mikeclark</a></li>
+
+                                        -->
+                                    </ul>
 
 
+                                </hgroup>
+                            </div>
+
+
+
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </header>
         <div id="topHeader">
             <nav class="navbar navbar-default" style="width:100%; height:44px">
@@ -106,15 +108,13 @@ if(!isset($pageName))
                             <li>
                                 <a class="page-scroll" href="<?= $pageLink; ?>#a-competencies">Competencies</a>
                             </li>
-                            <li <?= $class; ?>>
+                            <li <?=$class; ?>>
                                 <a class="page-scroll" href="<?= $pageLink; ?>#a-work">Work</a>
                             </li>
 
                             <li>
                                 <a class="page-scroll" href="<?= $pageLink; ?>#a-contact">Contact</a>
                             </li>
-
-
                         </ul>
                     </div>
                 </div>
@@ -122,7 +122,8 @@ if(!isset($pageName))
             </nav>
         </div>
 
-
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
         <?php
         
             if(!array_key_exists('body', $GLOBALS))
@@ -155,10 +156,19 @@ if(!isset($pageName))
                     <p>Mossy City © 2016, All Rights Reserved
                         <br />
                         <span>Web Design By: Mike Clark</span></p>
-                     <p><a href="https://www.linkedin.com/in/michael-clark-webdeveloper" target="_blank">Linkedin&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;</a></p>
+                    <p><a href="https://www.linkedin.com/in/michael-clark-webdeveloper" target="_blank">Linkedin&nbsp;<i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;</a></p>
                 </div>
             </footer>
 
+
+
+
+
+            <script src="js/waypoints/lib/jquery.waypoints.min.js"></script>
+            <script src="js/waypoints/lib/shortcuts/inview.min.js"></script>
+            <script src="js/waypoints/lib/shortcuts/sticky.min.js"></script>
+            <script src="js/validator.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
             <script type="text/javascript">
                 // Closes the Responsive Menu on Menu Item Click
@@ -168,15 +178,8 @@ if(!isset($pageName))
                 $(document).ready(function() {
 
                     var sticky = new Waypoint.Sticky({
-                            element: $('#topHeader')[0]
-                        })
-                        /*
-                        $('#topHeader').affix({
-                            offset: {
-                                top: (window.innerHeight - 44)
-                            }
-                        });
-                        */
+                        element: $('#topHeader')[0]
+                    })
                 });
 
             </script>

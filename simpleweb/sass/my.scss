@@ -1,5 +1,5 @@
-@import "bootstrap/assets/stylesheets/bootstrap";
-@import "flex.scss";
+//@import "bootstrap/assets/stylesheets/bootstrap";
+//@import "flex.scss";
 
 $color-rust: #770e0b;
 $color-lightBlue:#33a4c9;
@@ -81,17 +81,20 @@ ul {
 
 /*  Header */
 
+h1.webDev {
+        color: #cecece;
+        font-style: italic;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+        margin:10px 0px 0px 0px;
+}
+
+
 header hgroup {
     ol,
     ul {
         list-style: none;
         padding: 0;
         margin: 0 0 20px;
-    }
-    h1 {
-        color: #cecece;
-        font-style: italic;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
     }
 }
 .stuck {
@@ -210,7 +213,8 @@ $bar-height:.1.7em;
     width: .1em;
     float: left;
     color: white;
-    @extend .text-center
+    //@extend .text-center
+    text-align: center;
 }
 .skillData-Wrapper {
     width: 100%;
@@ -257,7 +261,7 @@ a.anchor {
         margin: 0;
         padding: 0;
         color: black;
-        text-align: center;
+        //text-align: center;
         background-size: 230px auto;
         background-position-x: 80%;
     }
