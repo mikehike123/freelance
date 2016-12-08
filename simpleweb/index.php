@@ -226,7 +226,7 @@
                             </ul>
                         </li>
                         <li>
-                            <h4><strong>Senior Software Contractor (11/22/10-12/22/10)</strong></h4>
+                            <h4><strong>Senior Software Contractor (11/22/10-2/22/11)</strong></h4>
                             <h4><strong>Chipton Ross/Boeing</strong></h4>
                             <div class="techEnviro">
                                 <h4><strong>Technical Environment:</strong></h4><span>C#, HTML, javascript, jquery, .Net, Excel, SQL Server, Stored Procedures, Full Text Search</span></div>
