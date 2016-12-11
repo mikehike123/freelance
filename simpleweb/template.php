@@ -48,7 +48,7 @@ if(!isset($pageName))
                     <div class=" col-md-7 col-xs-12">
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-                                <h1 class="webDev">Web Developer</h1>
+                                <h1 class="webDev">WordPress Developer</h1>
                             </div>
                         </div>
                         <div class="row">
