@@ -15,7 +15,7 @@ if(!isset($pageName))
     <html lang="en">
 
     <head>
-        <title>Mike Clark - Web Developer</title>
+        <title>Mike Clark - WordPress Developer</title>
         <meta charset="utf-8" />
         <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
